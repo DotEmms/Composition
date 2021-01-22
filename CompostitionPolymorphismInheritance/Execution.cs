@@ -18,7 +18,7 @@ namespace CompostitionPolymorphismInheritance
         //    _email.Send();
         //    _sms.Send();
         //}
-        private List<Notifications> notificationsList; 
+        private List<Notifications> notificationsList;
 
         public Execution(List<Notifications> list)
         {
