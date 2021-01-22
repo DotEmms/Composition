@@ -4,9 +4,9 @@ using System.Text;
 
 namespace CompostitionPolymorphismInheritance
 {
-    class Email : Notifications
+    class Email : INotifications
     {
-        public override void Send()
+        public void Send()
         {
             Console.WriteLine("You've got mail!");
         }

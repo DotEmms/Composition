@@ -4,8 +4,8 @@ using System.Text;
 
 namespace CompostitionPolymorphismInheritance
 {
-    abstract class Notifications
+    interface INotifications
     {
-        public abstract void Send();
+        void Send();
     }
 }

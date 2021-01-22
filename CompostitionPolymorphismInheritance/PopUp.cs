@@ -4,9 +4,9 @@ using System.Text;
 
 namespace CompostitionPolymorphismInheritance
 {
-    class PopUp : Notifications
+    class PopUp : INotifications
     {
-        public override void Send()
+        public void Send()
         {
             Console.WriteLine("I am an annoying popup");
         }

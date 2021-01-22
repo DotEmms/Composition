@@ -18,16 +18,16 @@ namespace CompostitionPolymorphismInheritance
         //    _email.Send();
         //    _sms.Send();
         //}
-        private List<Notifications> notificationsList;
+        private List<INotifications> notificationsList;
 
-        public Execution(List<Notifications> list)
+        public Execution(List<INotifications> list)
         {
             notificationsList = list;
         }
 
         public void Process()
         {
-            foreach (Notifications notification in notificationsList)
+            foreach (INotifications notification in notificationsList)
             {
                 notification.Send();
             }

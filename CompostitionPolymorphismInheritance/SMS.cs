@@ -4,9 +4,9 @@ using System.Text;
 
 namespace CompostitionPolymorphismInheritance
 {
-    class SMS : Notifications
+    class SMS : INotifications
     {
-        public override void Send()
+        public void Send()
         {
             Console.Beep(500, 600);
             Console.WriteLine("Textmessage received!");

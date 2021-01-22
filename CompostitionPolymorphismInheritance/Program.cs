@@ -7,7 +7,7 @@ namespace CompostitionPolymorphismInheritance
     {
         static void Main(string[] args)
         {
-            List<Notifications> list = new List<Notifications>();
+            List<INotifications> list = new List<INotifications>();
             list.Add(new Email());
             list.Add(new SMS());
             list.Add(new SMS());
